@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="Harper">
+    <meta property="og:site_name" content="My Personal Website">
+    <meta property="og:description" content="こんにちは、みんな">
+    <meta property="og:image" content="images/pfp.png">
+    <meta name="viewport" content="width=device-width">
+    <title>Harper</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <style>
+        .bg {
+            animation: slide 3s ease-in-out infinite alternate;
+            background-image: linear-gradient(-60deg,
+                    rgb(20, 20, 20) 50%,
+                    rgb(80, 81, 82) 50%);
+            bottom: 0;
+            left: -50%;
+            opacity: 0.5;
+            position: fixed;
+            right: -50%;
+            top: 0;
+            z-index: -1;
+        }
+
+        .bg2 {
+            animation-direction: alternate-reverse;
+            animation-duration: 4s;
+        }
+
+        .bg3 {
+            animation-duration: 5s;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(-25%);
+            }
+
+            100% {
+                transform: translateX(25%);
+            }
+        }
+    </style>
+    <div class="navbar">
+        <a href="/index.html">
+            <button class="nav1">Home</button>
+        </a>
+        <a href="/about.html">
+            <button class="nav2">About</button>
+        </a>
+        <a href="/projects.html">
+            <button class="nav3">Projects</button>
+        </a>
+    </div>
+    <div class="main-projects">
+        <h1 class="proj-txt">My Projects</h1>
+        <p class="proj-txt-2"><b>Soon™</b></p>
+    </div>
+</body>
+
+</html>
